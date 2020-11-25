@@ -35,7 +35,6 @@
         android:gravity="center"
         app:layout_constraintStart_toStartOf="@+id/screen"
         app:layout_constraintTop_toTopOf="@+id/background"/>
-    <!--        app:drawableLeftCompat="@drawable/arrow_left"-->
 
     <TextView
         android:id="@+id/rating"
