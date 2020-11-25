@@ -10,12 +10,13 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="530dp"
+        android:layout_width="0dp"
         android:layout_height="298dp"
-        android:layout_marginStart="33dp"
         android:contentDescription="@string/bg_desc"
         android:foreground="@drawable/bg_gradient"
         android:src="@drawable/avengers"
+        android:paddingLeft="33dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="@+id/screen"
         app:layout_constraintStart_toStartOf="@+id/screen"
         app:layout_constraintTop_toTopOf="@+id/screen" />
@@ -36,11 +37,13 @@
 
     <TextView
         android:id="@+id/rating"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="226dp"
-        android:background="@color/background"
+        android:paddingVertical="3dp"
+        android:paddingHorizontal="1dp"
+        android:background="@drawable/bg_rating"
         android:gravity="center"
         android:text="@string/age_limit"
         android:textColor="@color/white"
