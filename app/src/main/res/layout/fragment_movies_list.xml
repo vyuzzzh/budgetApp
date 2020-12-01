@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/screen"
+        tools:context=".FragmentMoviesList">
+
+        <TextView
+            android:id="@+id/list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginBottom="33dp"
+            android:gravity="center"
+            android:text="@string/movies_list"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:lineHeight="20sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/list"
+            android:drawablePadding="8dp"
+            app:layout_constraintStart_toStartOf="@+id/screen"
+            app:layout_constraintTop_toTopOf="@+id/screen" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card"
+            android:layout_width="170dp"
+            android:layout_height="296dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/bg_card"
+            android:padding="1dp"
+            app:layout_constraintCircleRadius="8dp"
+            app:layout_constraintStart_toStartOf="@+id/screen"
+            app:layout_constraintTop_toBottomOf="@+id/list_button">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
