@@ -1,11 +1,21 @@
 package com.vyuzzzh.budgetapp
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 
-class FragmentMoviesDetails : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_movies_details)
+class FragmentMoviesDetails : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View = inflater.inflate(R.layout.fragment_movies_details, container, false)
+
+    companion object {
+        fun newInstance(): FragmentMoviesDetails {
+            return FragmentMoviesDetails()
+        }
     }
 }
