@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/screen"
-        tools:context=".MovieDetailsActivity">
+        tools:context=".FragmentMoviesDetails">
 
         <ImageView
             android:id="@+id/background"

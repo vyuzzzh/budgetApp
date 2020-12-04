@@ -11,8 +11,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
         android:id="@+id/screen"
-        tools:context=".MovieDetailsActivity">
+        tools:context=".FragmentMoviesDetails">
 
         <ImageView
             android:id="@+id/background"
@@ -20,8 +21,8 @@
             android:layout_height="298dp"
             android:contentDescription="@string/bg_desc"
             android:foreground="@drawable/bg_gradient"
-            android:src="@drawable/avengers"
             android:paddingTop="70dp"
+            android:src="@drawable/avengers"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="@+id/screen"
             app:layout_constraintStart_toStartOf="@+id/screen"
@@ -227,6 +228,8 @@
             android:id="@+id/name_evans"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="15dp"
             android:layout_marginTop="6dp"
             android:text="@string/name_evans"
             android:textColor="@color/white"
@@ -240,6 +243,8 @@
             android:id="@+id/name_ruffalo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="15dp"
             android:layout_marginTop="6dp"
             android:text="@string/name_ruffalo"
             android:textColor="@color/white"

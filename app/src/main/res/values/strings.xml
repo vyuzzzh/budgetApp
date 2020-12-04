@@ -23,4 +23,5 @@
     <string name="name_evans">Chris Evans</string>
     <string name="name_ruffalo">Mark Ruffalo</string>
     <string name="name_hemsworth">Chris Hemsworth</string>
+    <string name="movies_list">Movies List</string>
 </resources>
